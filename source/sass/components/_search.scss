@@ -1,0 +1,30 @@
+.search {
+  height: 38px;
+  max-width: 570px;
+
+  .form-control {
+    border: 0;
+    padding-left: 6px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .input-group-prepend {
+    margin-right: 0;
+    z-index: 2;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    background-color: $white;
+    padding-left: 12px;
+  }
+
+  &__icon {
+    cursor: pointer;
+    transform: scaleX(-1);
+    font-size: rem(26);
+    color: $primary-orange-dark;
+    padding: 3px;
+  }
+}

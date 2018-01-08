@@ -1,7 +1,10 @@
 {
   "head": {
-    "p001_home": {
-      "title": "Timzatot"
+    "home": {
+      "title": "Project title"
+    },
+    "p01_home": {
+      "title": "Home title"
     }
   }
 }

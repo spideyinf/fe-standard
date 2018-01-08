@@ -19,7 +19,6 @@ $breakpoints: (
   phone-and-tablet: '(min-width: 768px) and (max-width: 991px)',
   smallphone-and-phone: '(min-width: 480px) and (max-width: 767px)',
   desktop-and-large-desktop: '(min-width: 992px) and (max-width: 1350px)',
-
   phone-landscape: '(max-width: 767px) and (orientation: landscape)'
 );
 
@@ -37,7 +36,6 @@ $breakpoints: (
       @content;
     }
   } @else {
-    @error 'No value found for `#{$breakpoint}`. '
-         + 'Please make sure it is defined in `$breakpoints` map.';
+    @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }

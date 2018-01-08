@@ -1,20 +1,16 @@
 // Paths
 ////////////////////////////////////////////////////////////////
-
 $path-to-images: '../images/';
 $path-to-fonts: '../fonts/';
 
 // Typography
 ////////////////////////////////////////////////////////////////
+@import url('https://fonts.googleapis.com/css?family=Arsenal:400,700&subset=vietnamese');
 
-@import url('https://fonts.googleapis.com/css?family=Baumans|Muli:200,300,700');
-
-$font-family-primary: 'Muli', sans-serif;
-$font-logo: 'Baumans', cursive;
+$font-family-primary: 'Arsenal', sans-serif;
 
 //Colors
 ////////////////////////////////////////////////////////////////
-
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;

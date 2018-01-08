@@ -53,3 +53,33 @@ $colors: (
     gray-dark: $gray-800
   )
   !default;
+// Font size
+$font-size-base: rem(14);
+
+// Font family
+$font-family-base: $font-family-primary;
+$line-height-base: 1;
+
+//Font weight
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+//Buttons
+$border-radius: rem(22);
+$border-radius-lg: 2rem;
+$border-radius-sm: 1.15rem;
+
+$input-btn-padding-y: rem(6);
+$input-btn-padding-x: rem(24);
+
+$input-btn-padding-y-sm: rem(4);
+$input-btn-padding-x-sm: rem(12);
+
+$input-btn-padding-y-lg: rem(8);
+$input-btn-padding-x-lg: 1rem;
+
+// Cards
+
+$card-border-radius:                8px;
+$card-inner-border-radius:          4px;

@@ -1,1 +1,14 @@
+.footer {
+  background-color: $primary-dark-blue;
+  width: 100%;
+  padding: 36px 0;
 
+  &__logo {
+    width: 168px;
+    height: 58px;
+  }
+
+  p {
+    line-height: 18px;
+  }
+}

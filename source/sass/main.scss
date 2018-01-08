@@ -4,8 +4,10 @@
 @import 'abstracts/animate';
 
 @import 'vendors/bootstrap-override-variable';
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/font-awesome/scss/font-awesome';
+@import 'bootstrap';
+@import 'ionicons';
+@import 'owl.carousel';
+@import 'owl.theme.default';
 
 @import 'base/typography';
 @import 'base/colors';
@@ -23,3 +25,7 @@
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/dropdowns';
+@import 'components/search';
+@import 'components/navbar';
+@import 'components/tabs';
+@import 'components/cards';

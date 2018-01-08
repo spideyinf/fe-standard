@@ -1,0 +1,24 @@
+.header {
+  background-color: $primary-dark-blue;
+  width: 100%;
+  padding: 6px 0 20px;
+
+  &__title,
+  &__sub-title {
+    color: $primary-silver;
+    font-size: 20px;
+  }
+
+  &__logo {
+    a {
+      display: block;
+      text-indent: -9999rem;
+      width: 170px;
+      height: 55px;
+      background-image: url('#{$path-to-images}tzt_logo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}

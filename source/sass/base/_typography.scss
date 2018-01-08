@@ -1,1 +1,76 @@
+p {
+  font-size: rem(14);
+  color: $primary-black;
+}
 
+.title {
+  font-weight: $font-weight-bold;
+  color: $primary-black;
+
+  &--primary {
+    text-transform: uppercase;
+    color: $primary-orange;
+    padding: 28px 0 16px;
+    font-size: rem(24);
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--orange {
+    color: $primary-orange;
+  }
+
+  &--orange-dark {
+    color: $primary-orange-dark;
+  }
+
+  &--gray {
+    color: $primary-gray100;
+  }
+}
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+
+.font-color-orange-dark {
+  color: $primary-orange-dark;
+}
+
+.font-color-white {
+  color: $white;
+}
+
+.font-color-silver {
+  color: $primary-silver;
+}
+
+.font-color-gray100 {
+  color: $primary-gray100;
+}
+
+.font-color-gray200 {
+  color: $primary-gray200;
+}
+
+.font-size-12 {
+  font-size: rem(12);
+}
+
+.font-size-18 {
+  font-size: rem(18);
+}
+
+.font-size-20 {
+  font-size: rem(20);
+}
+
+.font-size-36 {
+  font-size: rem(36);
+}
+
+.text-justify {
+  text-align: justify;
+}

@@ -1,20 +1,26 @@
 //-
+//- Elements :: Ionicons
+//-
+mixin ionicon(icon)
+  i(class=`icon ${icon}`)&attributes(attributes)
+
+//-
 //- Elements :: Button
 //- @param {string} label - Name of button
 //- @param {string} [link] - If button is anchor tag, string is 'anchor'
 //- @param {string} [icon] - Name of icon
 //-
-mixin button(label, link, icon)
-  if typeof link !== 'undefined' && link === 'anchor'
+mixin button(label, type, icon)
+  if typeof type !== 'undefined' && type === 'anchor'
     a(href='#').btn&attributes(attributes)
-      if typeof icon !== 'undefined' && icon !== ''
-        i(class=`anticon icon-${icon}`)
       span.text= label
+      if typeof icon !== 'undefined' && icon !== ''
+        +ionicon(icon).btn--icon
   else
     button.btn&attributes(attributes)
-      if typeof icon !== 'undefined' && icon !== ''
-        i(class=`anticon icon-${icon}`)
       span.text= label
+      if typeof icon !== 'undefined' && icon !== ''
+        +ionicon(icon).btn--icon
 
 
 //-
@@ -196,3 +202,30 @@ mixin img-thumbnail(src,alt)
 
 mixin set-block(key)
   - blocks[key] = this.block
+
+
+
+//-
+//- Tzt search
+//-
+mixin search()
+  .input-group.search
+    .input-group-prepend
+      +ionicon('ion-ios-search-strong').search__icon
+    input(type='text' class='form-control' placeholder='Tìm kiếm sản phẩm bạn muốn so sánh giá' aria-label='')
+
+
+
+//-
+//- Elements :: BS4 tabs
+//-
+mixin tabs(data)
+  nav.w-100
+    .nav.nav-tabs&attributes(attributes)(role='tablist')
+      each tab in data.tabs
+        //- Nav tabs
+        a.nav-item.nav-link(role='tab', data-toggle='tab' class= tab.active ? 'show active' : '', href= tab.href)= tab.title
+
+  //- Tab panels
+  .tab-content
+    block
