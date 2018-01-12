@@ -1,8 +1,0 @@
-build:
-  image: emilyhamal/demo-scss-lint
-  commands:
-    - framgia-ci run
-
-cache:
-  mount:
-    - .git
